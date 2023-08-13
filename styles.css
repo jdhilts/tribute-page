@@ -1,0 +1,128 @@
+:root {
+  --background-1: #9B9B9B;
+  --background-2: #80A1EE;
+  --background-3: black;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-width: 350px;
+  height: 100vh;
+}
+
+#navbar {
+  width: 100%;
+  min-width: 350px;
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--background-2);
+  position: fixed;
+}
+
+#nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  max-width: 350px;
+  min-width: 350px;
+}
+
+#nav-links a {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+     background-color: white;
+     color: black;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-1);
+  height: calc(100vh + 80px);
+  width: 100%;
+  min-width: 350px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+h1 {
+  font-family: Montserrat, san-serif;
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.profession {
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  width: 100%;
+  text-align: center;
+}
+
+#about {
+  font-family: Montserrat, sans-serif;
+  width: 100%;
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 20px;
+  
+}
+
+#about::first-letter {
+  font-size: 30px;
+  float: left;
+  margin-right: 1rem;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--background-3)
+}
+
+.project-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  background-color: var(--background-1);
+  margin-bottom: 2rem;
+}
+
+#projects h1 {
+  margin-top: 2rem;
+  text-decoration-line: underline;
+  margin-bottom: 2rem;
+  color: var(--background-1);
+  font-weight: 300;
+}
+
+
+
+
+
